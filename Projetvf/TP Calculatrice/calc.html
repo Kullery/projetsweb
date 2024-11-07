@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculatrice</h1>
+        
+        <!-- Champs de saisie des nombres -->
+        <input type="number" id="num1" placeholder="Entrez le premier nombre" />
+        <input type="number" id="num2" placeholder="Entrez le deuxième nombre" />
+        
+        <!-- Boutons d'opérations -->
+        <div class="operations">
+            <button onclick="calculate('+')">Additionner</button>
+            <button onclick="calculate('*')">Multiplier</button>
+            <button onclick="calculate('/')">Diviser</button>
+        </div>
+        
+        <!-- Boutons pour permuter les chiffres et vérifier la parité -->
+        <button onclick="invertNumbers()">Inverser les chiffres</button>
+        <button onclick="checkParity()">Vérifier la parité</button>
+        
+        <!-- Résultat et message de parité -->
+        <div id="result"></div>
+        <div id="parity"></div>
+        
+        <!-- Bouton retour vers un lien spécifique -->
+        <button class="back-button" onclick="goToLink()">Retour vers un lien</button>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
