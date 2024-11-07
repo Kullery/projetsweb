@@ -1,34 +1,34 @@
-function calculateTotal() {
-    let total = 0;
-    let grandTotal = 0;
+function total() {
+    let t1 = document.getElementById('p1').value * document.getElementById('q1').value;
+    let t2 = document.getElementById('p2').value * document.getElementById('q2').value;
+    let t3 = document.getElementById('p3').value * document.getElementById('q3').value;
 
-    // Calcul pour chaque ligne
-    for (let i = 1; i <= 3; i++) {
-        let price = parseFloat(document.getElementById('price' + i).value);
-        let quantity = parseFloat(document.getElementById('quantity' + i).value);
-        if (!isNaN(price) && !isNaN(quantity)) {
-            total = price * quantity;
-            document.getElementById('result' + i).value = total.toFixed(2);
-            grandTotal += total;
-        } else {
-            document.getElementById('result' + i).value = "";
-        }
-    }
+    document.getElementById('t1').value = t1.toFixed(2);
+    document.getElementById('t2').value = t2.toFixed(2);
+    document.getElementById('t3').value = t3.toFixed(2);
 
-    // Affichage du total général
-    document.getElementById('totalAmount').textContent = grandTotal.toFixed(2);
+    let grandTotal = t1 + t2 + t3;
+
+    document.getElementById('totalAmount').innerText = grandTotal.toFixed(2);
 }
 
-function resetForm() {
-    // Réinitialiser tous les champs de saisie
-    for (let i = 1; i <= 3; i++) {
-        document.getElementById('article' + i).value = "";
-        document.getElementById('price' + i).value = "";
-        document.getElementById('quantity' + i).value = "";
-        document.getElementById('result' + i).value = "";
-    }
+function reset() {
+    document.getElementById('a1').value = '';
+    document.getElementById('p1').value = '';
+    document.getElementById('q1').value = '';
+    document.getElementById('t1').value = '';
 
-    document.getElementById('totalAmount').textContent = "0";
+    document.getElementById('a2').value = '';
+    document.getElementById('p2').value = '';
+    document.getElementById('q2').value = '';
+    document.getElementById('t2').value = '';
+
+    document.getElementById('a3').value = '';
+    document.getElementById('p3').value = '';
+    document.getElementById('q3').value = '';
+    document.getElementById('t3').value = '';
+
+    document.getElementById('totalAmount').innerText = '0.00';
 }
 
 function back1(){

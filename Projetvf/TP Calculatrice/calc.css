@@ -51,13 +51,12 @@ button:disabled {
     font-weight: bold;
 }
 
-/* Style pour le bouton Retour vers un lien */
 .back-button {
-    background-color: #4CAF50;  /* Couleur bleue */
+    background-color: #4CAF50;
     border: 1px solid #4CAF50;
-    margin-top: 20px;  /* Ajoute un espacement pour séparer les boutons */
+    margin-top: 20px;
 }
 
 .back-button:hover {
-    background-color: #45a049;  /* Couleur bleue plus foncée au survol */
+    background-color: #45a049;
 }
