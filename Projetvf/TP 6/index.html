@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="bloc">
+        <h2>Facture 📋</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Résultat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="a1" placeholder="Article 1"></td>
+                    <td><input type="number" id="p1" placeholder="Prix" step="0.01"></td>
+                    <td><input type="number" id="q1" placeholder="Quantité"></td>
+                    <td><input type="number" id="t1" placeholder="Total" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a2" placeholder="Article 2"></td>
+                    <td><input type="number" id="p2" placeholder="Prix" step="0.01"></td>
+                    <td><input type="number" id="q2" placeholder="Quantité"></td>
+                    <td><input type="number" id="t2" placeholder="Total" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a3" placeholder="Article 3"></td>
+                    <td><input type="number" id="p3" placeholder="Prix" step="0.01"></td>
+                    <td><input type="number" id="q3" placeholder="Quantité"></td>
+                    <td><input type="number" id="t3" placeholder="Total" disabled></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="buttons">
+            <button onclick="total()">Résultat</button>
+            <button onclick="reset()">Réinitialiser</button>
+        </div>
+        <div id="grandTotal">
+            <p>Total général: <span id="totalAmount">0</span> €</p>
+        </div>
+        <center>
+            <button onclick="back1()">Retour aux Projets</button>
+        </center>
+    </div>
+</body>
+</html>
