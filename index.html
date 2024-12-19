@@ -6,6 +6,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="java.js"></script>
     <title>Index principal</title>
+    <script>
+        let audio = new Audio('GTA 4 Loading Screen Theme HD.mp3'); // Remplacez par le chemin de votre fichier audio
+
+        function playAudio() {
+            audio.play();
+        }
+
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0; // Réinitialise l'audio au début
+        }
+    </script>
 </head>
 
 <header>
@@ -16,10 +28,14 @@
 </header>
 <body>
     <center>
-    <button class="button" onclick="liencv()"><h2>CV</h2></button>
-    <button class="button" onclick="lienprojets()"><h2>Projets</h2></button>
-    <button class="button" onclick="liencontacts()"><h2>Contacts</h2></button>
-    <button class="button" onclick="liencertifs()"><h2>Certifications</h2></button>
+        <button class="button" onclick="liencv()"><h2>CV</h2></button>
+        <button class="button" onclick="lienprojets()"><h2>Projets</h2></button>
+        <button class="button" onclick="liencontacts()"><h2>Contacts</h2></button>
+        <button class="button" onclick="liencertifs()"><h2>Certifications</h2></button>
+        <br><br>
+        <!-- Boutons pour l'audio -->
+        <button class="button" onclick="playAudio(); startBackgroundAnimation()">🎵 Ambiance</button>
+        <button class="button" onclick="stopAudio(); stopBackgroundAnimation()">⏹ Stop</button>
     </center>
 </body>
 </html>
