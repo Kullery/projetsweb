@@ -1,0 +1,47 @@
+/* Style général pour le corps */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #222;
+}
+
+/* Style pour les liens */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+/* Style pour les titres */
+h1 {
+    font-size: 2.5em;
+    margin: 20px 20;
+    text-align: center;
+    padding: 55px 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    color: #ffffff;
+}
+
+h1:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Conteneur centré */
+body > * {
+    text-align: center;
+}
