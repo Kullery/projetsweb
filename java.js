@@ -1,5 +1,5 @@
 function liencv(){
-    window.open('cv-duhesme-louis.pdf', '_blank');
+    window.open('cv_duhesme_louis.pdf', '_blank');
 }
 
 function liencertifs(){
