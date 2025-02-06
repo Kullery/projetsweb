@@ -1,25 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="java.js"></script>
-    <title>Contacts</title>
+    <title>Mes Contacts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+            background-image: url(bg.gif);
+            overflow: hidden;        
+        }
+        .container {
+            background: white;
+            opacity:80%;
+            font-size: 20px;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0073b1;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #005582;
+        }
+    </style>
 </head>
 <body>
-    <center><h1>Contacts</h1>
-    <hr width="40%">
-    </center>
-    <div>
-        <div>
-            <img src="linkedinlogo.jpg">
-        </div>
-        <div>
-            <p>https://www.linkedin.com/in/louis-duhesme-b7bb8030a/</p>
-        </div>
+    <div class="container">
+        <h1>Mes Contacts</h1>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/louis-duhesme-b7bb8030a/" target="_blank">LinkedIn 👔</a></li>
+            <li><a href="https://github.com/votreprofil" target="_blank">GitHub 💻</a></li>
+            <li><a href="mailto:duhesme.louis@gmail.com?subject=Contact&body=Bonjour," target="_blank">Email 📧</a></li>
+            <hr>
+            <li><a href="index.html">Retour au menu</a></li>
+        </ul>
     </div>
-
-    <button class="button" onclick="retour()"><h2>Retour</h2></button></center>
 </body>
 </html>

@@ -3,7 +3,8 @@ body {
     background-size: cover; 
     font-family: 'Arial', sans-serif;
     margin: 0;
-    color:white
+    color:white;
+    overflow-x: hidden;
 }
 
 header {
@@ -20,14 +21,14 @@ header {
 
 main {
     display: flex;
-    justify-content: center; /* Centre le contenu principal */
+    justify-content: center;
     align-items: center;
-    height: 700px; /* Hauteur du contenu principal */
+    height: 700px;
 }
 
 nav {
-    border-radius: 8px; /* Bords arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     color:white;
     text-align: center;
@@ -35,12 +36,12 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* Supprime les puces de la liste */
+    list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
-    margin: 15px 0; /* Espace entre les éléments de la liste */
+    margin: 15px 0;
 }
 
 nav ul li a {
